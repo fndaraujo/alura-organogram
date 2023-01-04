@@ -1,3 +1,10 @@
+import { GlobalStyle } from './styles/globalstyle'
+
 export const App = () => {
-  return <h1>organogram</h1>
+  return (
+    <>
+      <GlobalStyle />
+      <h1>organogram</h1>
+    </>
+  )
 }
