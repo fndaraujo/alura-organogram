@@ -1,9 +1,9 @@
 import { StyledDropdown } from '@/components/Dropdown/style'
 
-export const Dropdown = ({ label, list }) => (
+export const Dropdown = ({ isRequired, label, list }) => (
   <StyledDropdown>
     <label>{label}</label>
-    <select>
+    <select required={isRequired}>
       {list.map((item) => (
         <option key={item}>{item}</option>
       ))}
