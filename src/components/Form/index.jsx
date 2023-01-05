@@ -1,5 +1,16 @@
 import { Textfield } from '@/components/Textfield'
+import { Dropdown } from '@/components/Dropdown'
 import { StyledForm } from '@/components/Form/style'
+
+const teams = [
+  'Programming',
+  'Front-End',
+  'Data Science',
+  'Devps',
+  'UX & Design',
+  'Mobile',
+  'Inovation & Management',
+]
 
 export const Form = () => (
   <StyledForm>
@@ -8,6 +19,7 @@ export const Form = () => (
       <Textfield label={'name'} placeholder={'Enter name...'} />
       <Textfield label={'role'} placeholder={'Enter role...'} />
       <Textfield label={'image'} placeholder={'Enter image url...'} />
+      <Dropdown label={'team'} list={teams} />
     </form>
   </StyledForm>
 )
