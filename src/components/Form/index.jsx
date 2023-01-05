@@ -13,9 +13,13 @@ const teams = [
   'Inovation & Management',
 ]
 
+const handleSubmit = (e) => {
+  e.preventDefault()
+}
+
 export const Form = () => (
   <StyledForm>
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2>Fill in the fields to create a contributor card</h2>
       <Textfield label={'name'} placeholder={'Enter name...'} />
       <Textfield label={'role'} placeholder={'Enter role...'} />
