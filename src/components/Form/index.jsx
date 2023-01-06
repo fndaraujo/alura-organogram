@@ -4,7 +4,7 @@ import { Dropdown } from '@/components/Dropdown'
 import { Button } from '@/components/Button'
 import { StyledForm } from '@/components/Form/style'
 
-export const Form = () => {
+export const Form = ({ onRecord }) => {
   const [name, setName] = useState('')
   const [role, setRole] = useState('')
   const [image, setImage] = useState('')
@@ -21,6 +21,7 @@ export const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    onRecord({ name, role, image, team })
   }
 
   return (
