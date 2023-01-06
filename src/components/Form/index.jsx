@@ -12,6 +12,10 @@ export const Form = ({ onRecord, teams }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     onRecord({ name, role, image, team })
+    setName('')
+    setRole('')
+    setImage('')
+    setTeam('')
   }
   return (
     <StyledForm>
