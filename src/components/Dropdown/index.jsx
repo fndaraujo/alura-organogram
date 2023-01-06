@@ -8,6 +8,7 @@ export const Dropdown = ({ isRequired, label, list, value, setValue }) => (
       value={value}
       onChange={(e) => setValue(e.target.value)}
     >
+      <option>Select team</option>
       {list.map((item) => (
         <option key={item}>{item}</option>
       ))}
