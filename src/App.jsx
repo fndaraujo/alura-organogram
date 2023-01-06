@@ -65,7 +65,13 @@ export const App = () => {
       <Banner />
       <Form onRecord={handleOnRecord} teams={teams.map((team) => team.name)} />
       {teams.map((team) => (
-        <Team key={team.name} team={team} contributors={contributors} />
+        <Team
+          key={team.name}
+          team={team}
+          contributors={contributors.filter(
+            (contributor) => contributor.team === team.name
+          )}
+        />
       ))}
     </>
   )
