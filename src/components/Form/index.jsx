@@ -4,7 +4,7 @@ import { Dropdown } from '@/components/Dropdown'
 import { Button } from '@/components/Button'
 import { StyledForm } from '@/components/Form/style'
 
-export const Form = ({ onRecord }) => {
+export const Form = ({ onRecord, teams }) => {
   const [name, setName] = useState('')
   const [role, setRole] = useState('')
   const [image, setImage] = useState('')

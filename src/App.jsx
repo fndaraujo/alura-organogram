@@ -63,7 +63,7 @@ export const App = () => {
     <>
       <GlobalStyle />
       <Banner />
-      <Form onRecord={handleOnRecord} />
+      <Form onRecord={handleOnRecord} teams={teams.map((team) => team.name)} />
       {teams.map((team) => (
         <Team key={team.name} team={team} />
       ))}
