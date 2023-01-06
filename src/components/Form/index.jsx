@@ -9,21 +9,10 @@ export const Form = ({ onRecord }) => {
   const [role, setRole] = useState('')
   const [image, setImage] = useState('')
   const [team, setTeam] = useState('')
-  const teams = [
-    'Programming',
-    'Front-End',
-    'Data Science',
-    'Devps',
-    'UX & Design',
-    'Mobile',
-    'Inovation & Management',
-  ]
-
   const handleSubmit = (e) => {
     e.preventDefault()
     onRecord({ name, role, image, team })
   }
-
   return (
     <StyledForm>
       <form onSubmit={handleSubmit}>
