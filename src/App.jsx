@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Banner } from '@/components/Banner'
 import { Form } from '@/components/Form'
+import { Team } from '@/components/Team'
 import { GlobalStyle } from '@/styles/globalstyle'
 
 export const App = () => {
@@ -63,6 +64,9 @@ export const App = () => {
       <GlobalStyle />
       <Banner />
       <Form onRecord={handleOnRecord} />
+      {teams.map((team) => (
+        <Team key={team.name} team={team} />
+      ))}
     </>
   )
 }
