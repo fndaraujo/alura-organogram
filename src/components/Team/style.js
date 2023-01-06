@@ -11,4 +11,11 @@ export const StyledTeam = styled.section`
     display: inline-block;
     padding-bottom: 8px;
   }
+
+  .contributor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 32px 0;
+  }
 `
