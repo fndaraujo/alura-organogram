@@ -58,7 +58,7 @@ export const App = () => {
   ]
   const [contributors, setContributors] = useState([])
   const handleOnRecord = (contributor) =>
-    setContributors(...contributors, contributor)
+    setContributors([...contributors, contributor])
   return (
     <>
       <GlobalStyle />
