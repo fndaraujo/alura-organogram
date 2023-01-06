@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Banner } from '@/components/Banner'
 import { Form } from '@/components/Form'
 import { Team } from '@/components/Team'
+import { Footer } from '@/components/Footer'
 import { GlobalStyle } from '@/styles/globalstyle'
 
 export const App = () => {
@@ -73,6 +74,7 @@ export const App = () => {
           )}
         />
       ))}
+      <Footer />
     </>
   )
 }
