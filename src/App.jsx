@@ -57,7 +57,111 @@ export const App = () => {
       },
     },
   ]
-  const [contributors, setContributors] = useState([])
+  const initialContributors = [
+    {
+      name: 'Guilherme Lima',
+      role: 'Tech Leader',
+      image: 'https://github.com/guilhermeonrails.png',
+      team: teams[1].name,
+    },
+    {
+      name: 'Marcos Vinicios Neves',
+      role: 'Instructor',
+      image: 'https://github.com/viniciosneves.png',
+      team: teams[1].name,
+    },
+    {
+      name: 'Juliana Amoasei',
+      role: 'Instructor & Software Developer',
+      image: 'https://github.com/JulianaAmoasei.png',
+      team: teams[1].name,
+    },
+    {
+      name: 'Luiz Fernando Ribeiro',
+      role: 'Instructor',
+      image: 'https://github.com/lfrprazeres.png',
+      team: teams[1].name,
+    },
+    {
+      name: 'Fernando Araujo',
+      role: 'Developer & Computer Scientist',
+      image: 'https://github.com/fndaraujo.png',
+      team: teams[1].name,
+    },
+    {
+      name: 'Paulo Silveira',
+      role: 'Hipster & Alura CTEO',
+      image: 'https://github.com/peas.png',
+      team: teams[0].name,
+    },
+    {
+      name: 'Vinicius Dias',
+      role: 'Zend Certified Engineer & Full Stack Developer',
+      image: 'https://github.com/cviniciussdias.png',
+      team: teams[0].name,
+    },
+    {
+      name: 'André Bessa',
+      role: 'Instructor & Software Developer',
+      image: 'https://github.com/bessax.png',
+      team: teams[0].name,
+    },
+    {
+      name: 'Larissa Gabriela',
+      role: 'Instructor & Medical Physicist',
+      image: 'https://github.com/larissagabriela.png',
+      team: teams[0].name,
+    },
+    {
+      name: 'Guilherme Lima',
+      role: 'Tech Leader',
+      image: 'https://github.com/guilhermeonrails.png',
+      team: teams[2].name,
+    },
+    {
+      name: 'Caio Couto Moreira',
+      role: 'Instructor & Mobile Developer',
+      image: 'https://github.com/Kakomo.png',
+      team: teams[5].name,
+    },
+    {
+      name: 'Ricarth Lima',
+      role: 'Instructor & Mobile Developer',
+      image: 'https://github.com/ricarthlima.png',
+      team: teams[5].name,
+    },
+    {
+      name: 'Natan Souza',
+      role: 'Designer & Developer',
+      image: 'https://github.com/designernatan.png',
+      team: teams[4].name,
+    },
+    {
+      name: 'Lívia Cristina Gabos Martins',
+      role: 'UX Master & Developer',
+      image: 'https://github.com/liviagabos.png',
+      team: teams[4].name,
+    },
+    {
+      name: 'Camila Fernanda Alves',
+      role: 'Instructor & System Engineer',
+      image: 'https://github.com/camilafernanda.png',
+      team: teams[3].name,
+    },
+    {
+      name: 'Daniel Artine',
+      role: 'Instructor & Tech Leader',
+      image: 'https://github.com/danielartine.png',
+      team: teams[3].name,
+    },
+    {
+      name: 'Paulo Silveira',
+      role: 'Hipster & Alura CTEO',
+      image: 'https://github.com/peas.png',
+      team: teams[6].name,
+    },
+  ]
+  const [contributors, setContributors] = useState(initialContributors)
   const handleOnRecord = (contributor) =>
     setContributors([...contributors, contributor])
   return (
