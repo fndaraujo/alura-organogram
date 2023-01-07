@@ -17,6 +17,7 @@ export const Team = ({ team, contributors, onDelete, changeColor }) => {
           {contributors.map((contributor) => (
             <Contributor
               key={contributor.name}
+              id={contributor.id}
               name={contributor.name}
               role={contributor.role}
               image={contributor.image}

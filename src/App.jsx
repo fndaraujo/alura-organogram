@@ -175,7 +175,8 @@ export const App = () => {
         return team
       })
     )
-  const deleteContributor = () => console.log('Delete contributor.')
+  const deleteContributor = (id) =>
+    setContributors(contributors.filter((contributor) => contributor.id !== id))
   return (
     <>
       <GlobalStyle />
