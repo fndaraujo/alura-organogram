@@ -185,6 +185,7 @@ export const App = () => {
             (contributor) => contributor.team === team.name
           )}
           onDelete={deleteContributor}
+          changeColor={changeTeamColor}
         />
       ))}
       <Footer />

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledTeam = styled.section`
+  position: relative;
   text-align: center;
   padding: 32px;
   background-color: ${(props) => props.secundary || 'magenta'};
@@ -17,5 +18,11 @@ export const StyledTeam = styled.section`
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 32px 0;
+  }
+
+  .input-color {
+    position: absolute;
+    top: 20px;
+    right: 50px;
   }
 `
