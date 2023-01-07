@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer'
 import { GlobalStyle } from '@/styles/globalstyle'
 
 export const App = () => {
-  const teams = [
+  const [teams, setTeams] = useState([
     {
       name: 'Programming',
       colors: {
@@ -56,7 +56,7 @@ export const App = () => {
         secundary: '#ffeedf',
       },
     },
-  ]
+  ])
   const initialContributors = [
     {
       name: 'Guilherme Lima',
