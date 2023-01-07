@@ -1,10 +1,11 @@
+import hexToRgba from 'hex-to-rgba'
 import { Contributor } from '@/components/Contributor'
 import { StyledTeam } from '@/components/Team/style'
 
 export const Team = ({ team, contributors, onDelete, changeColor }) => {
   return (
     contributors.length > 0 && (
-      <StyledTeam primary={team.color} secundary={team.color}>
+      <StyledTeam primary={team.color} secundary={hexToRgba(team.color, '0.6')}>
         <input
           type={'color'}
           onChange={(e) => changeColor(e.target.value, team.name)}
