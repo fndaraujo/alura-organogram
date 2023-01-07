@@ -3,24 +3,25 @@ import styled from 'styled-components'
 export const StyledContributor = styled.div`
   width: 280px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background-color: white;
 
   img {
-    width: 150px;
+    width: 160px;
     border-radius: 50%;
     position: relative;
     bottom: -50px;
   }
 
   .header {
-    background-color: ${(props) => props.primary || '#f0f0f0'};
     border-radius: 10px 10px 0 0;
+    background-color: ${(props) => props.primary || '#f0f0f0'};
   }
-  .footer {
-    background-color: white;
 
-    border-radius: 0 0 10px 10px;
+  .footer {
     padding-top: 90px;
     padding-bottom: 40px;
+    border-radius: 0 0 10px 10px;
 
     h4 {
       color: #6278f7;
