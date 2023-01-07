@@ -6,12 +6,19 @@ export const StyledContributor = styled.div`
   border-radius: 10px;
   background-color: white;
   margin: 16px 0;
+  position: relative;
 
   img {
     width: 160px;
     border-radius: 50%;
     position: relative;
     bottom: -50px;
+  }
+
+  .delete {
+    position: absolute;
+    right: -10px;
+    top: -10px;
   }
 
   .header {
