@@ -164,6 +164,7 @@ export const App = () => {
   const [contributors, setContributors] = useState(initialContributors)
   const handleOnRecord = (contributor) =>
     setContributors([...contributors, contributor])
+  const deleteContributor = () => console.log('Delete contributor.')
   return (
     <>
       <GlobalStyle />
@@ -176,6 +177,7 @@ export const App = () => {
           contributors={contributors.filter(
             (contributor) => contributor.team === team.name
           )}
+          onDelete={deleteContributor}
         />
       ))}
       <Footer />

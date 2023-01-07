@@ -1,7 +1,7 @@
 import { Contributor } from '@/components/Contributor'
 import { StyledTeam } from '@/components/Team/style'
 
-export const Team = ({ team, contributors }) => {
+export const Team = ({ team, contributors, onDelete }) => {
   return (
     contributors.length > 0 && (
       <StyledTeam
@@ -17,6 +17,7 @@ export const Team = ({ team, contributors }) => {
               role={contributor.role}
               image={contributor.image}
               headerColor={team.colors.primary}
+              onDelete={onDelete}
             />
           ))}
         </div>
