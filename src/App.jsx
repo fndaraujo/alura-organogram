@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import { Banner } from '@/components/Banner'
 import { Form } from '@/components/Form'
 import { Team } from '@/components/Team'
@@ -8,30 +9,37 @@ import { GlobalStyle } from '@/styles/globalstyle'
 export const App = () => {
   const [teams, setTeams] = useState([
     {
+      id: uuidv4(),
       name: 'Programming',
       color: '#57c278',
     },
     {
+      id: uuidv4(),
       name: 'Front-End',
       color: '#82cffa',
     },
     {
+      id: uuidv4(),
       name: 'Data Science',
       color: '#a6d157',
     },
     {
+      id: uuidv4(),
       name: 'Devops',
       color: '#e06b69',
     },
     {
+      id: uuidv4(),
       name: 'UX & Design',
       color: '#db6ebf',
     },
     {
+      id: uuidv4(),
       name: 'Mobile',
       color: '#ffba05',
     },
     {
+      id: uuidv4(),
       name: 'Inovation & Management',
       color: '#ff8a29',
     },
