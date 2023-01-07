@@ -164,6 +164,13 @@ export const App = () => {
   const [contributors, setContributors] = useState(initialContributors)
   const handleOnRecord = (contributor) =>
     setContributors([...contributors, contributor])
+  const changeTeamColor = (color, name) =>
+    setTeams(
+      teams.map((team) => {
+        team.name === name && (team.colors.secundary = color)
+        return team
+      })
+    )
   const deleteContributor = () => console.log('Delete contributor.')
   return (
     <>
