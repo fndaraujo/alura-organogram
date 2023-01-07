@@ -5,6 +5,7 @@ export const StyledContributor = styled.div`
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   background-color: white;
+  margin: 16px 0;
 
   img {
     width: 160px;
