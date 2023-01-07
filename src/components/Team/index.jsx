@@ -4,14 +4,11 @@ import { StyledTeam } from '@/components/Team/style'
 export const Team = ({ team, contributors, onDelete, changeColor }) => {
   return (
     contributors.length > 0 && (
-      <StyledTeam
-        primary={team.colors.primary}
-        secundary={team.colors.secundary}
-      >
+      <StyledTeam primary={team.color} secundary={team.color}>
         <input
           type={'color'}
           onChange={(e) => changeColor(e.target.value, team.name)}
-          value={team.colors.primary}
+          value={team.color}
           className={'input-color'}
         />
         <h3>{team.name}</h3>
@@ -22,7 +19,7 @@ export const Team = ({ team, contributors, onDelete, changeColor }) => {
               name={contributor.name}
               role={contributor.role}
               image={contributor.image}
-              headerColor={team.colors.primary}
+              headerColor={team.color}
               onDelete={onDelete}
             />
           ))}

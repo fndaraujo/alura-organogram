@@ -9,52 +9,31 @@ export const App = () => {
   const [teams, setTeams] = useState([
     {
       name: 'Programming',
-      colors: {
-        primary: '#57c278',
-        secundary: '#d9f7e9',
-      },
+      color: '#57c278',
     },
     {
       name: 'Front-End',
-      colors: {
-        primary: '#82cffa',
-        secundary: '#e8f8ff',
-      },
+      color: '#82cffa',
     },
     {
       name: 'Data Science',
-      colors: {
-        primary: '#a6d157',
-        secundary: '#f0f8e2',
-      },
+      color: '#a6d157',
     },
     {
       name: 'Devops',
-      colors: {
-        primary: '#e06b69',
-        secundary: '#fde7e8',
-      },
+      color: '#e06b69',
     },
     {
       name: 'UX & Design',
-      colors: {
-        primary: '#db6ebf',
-        secundary: '#fae9f5',
-      },
+      color: '#db6ebf',
     },
     {
       name: 'Mobile',
-      colors: {
-        primary: '#ffba05',
-        secundary: '#fff5d9',
-      },
+      color: '#ffba05',
     },
     {
       name: 'Inovation & Management',
-      colors: {
-        primary: '#ff8a29',
-        secundary: '#ffeedf',
-      },
+      color: '#ff8a29',
     },
   ])
   const initialContributors = [
@@ -167,7 +146,7 @@ export const App = () => {
   const changeTeamColor = (color, name) =>
     setTeams(
       teams.map((team) => {
-        team.name === name && (team.colors.primary = color)
+        team.name === name && (team.color = color)
         return team
       })
     )
