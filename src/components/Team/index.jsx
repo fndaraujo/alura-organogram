@@ -11,7 +11,7 @@ export const Team = ({ team, contributors, onDelete, changeColor }) => {
         <input
           type={'color'}
           onChange={(e) => changeColor(e.target.value, team.name)}
-          value={team.colors.secundary}
+          value={team.colors.primary}
           className={'input-color'}
         />
         <h3>{team.name}</h3>

@@ -167,7 +167,7 @@ export const App = () => {
   const changeTeamColor = (color, name) =>
     setTeams(
       teams.map((team) => {
-        team.name === name && (team.colors.secundary = color)
+        team.name === name && (team.colors.primary = color)
         return team
       })
     )
