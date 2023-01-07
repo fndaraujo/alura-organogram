@@ -8,7 +8,7 @@ export const Team = ({ team, contributors, onDelete, changeColor }) => {
       <StyledTeam primary={team.color} secundary={hexToRgba(team.color, '0.6')}>
         <input
           type={'color'}
-          onChange={(e) => changeColor(e.target.value, team.name)}
+          onChange={(e) => changeColor(e.target.value, team.id)}
           value={team.color}
           className={'input-color'}
         />

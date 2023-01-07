@@ -168,10 +168,10 @@ export const App = () => {
   const [contributors, setContributors] = useState(initialContributors)
   const handleOnRecord = (contributor) =>
     setContributors([...contributors, contributor])
-  const changeTeamColor = (color, name) =>
+  const changeTeamColor = (color, id) =>
     setTeams(
       teams.map((team) => {
-        team.name === name && (team.color = color)
+        team.id === id && (team.color = color)
         return team
       })
     )
