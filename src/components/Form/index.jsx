@@ -69,6 +69,7 @@ export const Form = ({ onRecord, onTeamRecord, teams }) => {
         />
         <Field
           isRequired
+          type={'color'}
           label={'color'}
           placeholder={'Enter color...'}
           value={teamColor}
