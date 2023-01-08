@@ -15,6 +15,6 @@ export const StyledField = styled.div`
     width: 100%;
     border: none;
     font-size: 24px;
-    padding: 24px;
+    padding: ${(props) => (props.type === 'color' ? '5px 24px' : '24px')};
   }
 `
