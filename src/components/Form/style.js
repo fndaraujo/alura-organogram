@@ -2,8 +2,10 @@ import styled from 'styled-components'
 
 export const StyledForm = styled.section`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 80px 0;
+  gap: 20px;
+  margin: 80px 50px;
 
   h2 {
     font-size: 32px;
@@ -11,7 +13,7 @@ export const StyledForm = styled.section`
   }
 
   form {
-    max-width: 80%;
+    flex: 1;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 36px 64px;
