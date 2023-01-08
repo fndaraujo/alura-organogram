@@ -30,14 +30,14 @@ export const Form = ({ onRecord, onTeamRecord, teams }) => {
       <form onSubmit={handleSubmit}>
         <h2>Fill in the fields to create a contributor card</h2>
         <Textfield
-          isRequired={true}
+          isRequired
           label={'name'}
           placeholder={'Enter name...'}
           value={name}
           setValue={setName}
         />
         <Textfield
-          isRequired={true}
+          isRequired
           label={'role'}
           placeholder={'Enter role...'}
           value={role}
@@ -50,7 +50,7 @@ export const Form = ({ onRecord, onTeamRecord, teams }) => {
           setValue={setImage}
         />
         <Dropdown
-          isRequired={true}
+          isRequired
           label={'team'}
           list={teams}
           value={team}
@@ -61,14 +61,14 @@ export const Form = ({ onRecord, onTeamRecord, teams }) => {
       <form onSubmit={handleSubmitTeam}>
         <h2>Fill in the fields to create a team</h2>
         <Textfield
-          isRequired={true}
+          isRequired
           label={'team'}
           placeholder={'Enter team name...'}
           value={teamName}
           setValue={setTeamName}
         />
         <Textfield
-          isRequired={true}
+          isRequired
           label={'color'}
           placeholder={'Enter color...'}
           value={teamColor}
