@@ -168,6 +168,8 @@ export const App = () => {
   const [contributors, setContributors] = useState(initialContributors)
   const handleOnRecord = (contributor) =>
     setContributors([...contributors, contributor])
+  const handleTeamRecord = (team) =>
+    setTeams([...teams, { ...team, id: uuidv4() }])
   const changeTeamColor = (color, id) =>
     setTeams(
       teams.map((team) => {
@@ -181,7 +183,11 @@ export const App = () => {
     <>
       <GlobalStyle />
       <Banner />
-      <Form onRecord={handleOnRecord} teams={teams.map((team) => team.name)} />
+      <Form
+        onRecord={handleOnRecord}
+        onTeamRecord={handleTeamRecord}
+        teams={teams.map((team) => team.name)}
+      />
       {teams.map((team) => (
         <Team
           key={team.name}
