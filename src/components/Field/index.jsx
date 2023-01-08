@@ -1,4 +1,4 @@
-import { StyledTextfield } from '@/components/Textfield/style'
+import { StyledTextfield } from '@/components/Field/style'
 
 export const Textfield = ({
   isRequired,

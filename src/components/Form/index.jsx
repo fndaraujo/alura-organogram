@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Textfield } from '@/components/Textfield'
+import { Textfield } from '@/components/Field'
 import { Dropdown } from '@/components/Dropdown'
 import { Button } from '@/components/Button'
 import { StyledForm } from '@/components/Form/style'
