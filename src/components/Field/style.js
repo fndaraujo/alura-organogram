@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledTextfield = styled.div`
+export const StyledField = styled.div`
   margin: 24px 0;
 
   label {

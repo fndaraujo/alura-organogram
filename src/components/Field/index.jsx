@@ -1,13 +1,7 @@
-import { StyledTextfield } from '@/components/Field/style'
+import { StyledField } from '@/components/Field/style'
 
-export const Textfield = ({
-  isRequired,
-  label,
-  placeholder,
-  value,
-  setValue,
-}) => (
-  <StyledTextfield>
+export const Field = ({ isRequired, label, placeholder, value, setValue }) => (
+  <StyledField>
     <label>{label}</label>
     <input
       required={isRequired}
@@ -16,5 +10,5 @@ export const Textfield = ({
       value={value}
       onChange={(e) => setValue(e.target.value)}
     />
-  </StyledTextfield>
+  </StyledField>
 )

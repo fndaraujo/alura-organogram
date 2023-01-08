@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Textfield } from '@/components/Field'
+import { Field } from '@/components/Field'
 import { Dropdown } from '@/components/Dropdown'
 import { Button } from '@/components/Button'
 import { StyledForm } from '@/components/Form/style'
@@ -29,21 +29,21 @@ export const Form = ({ onRecord, onTeamRecord, teams }) => {
     <StyledForm>
       <form onSubmit={handleSubmit}>
         <h2>Fill in the fields to create a contributor card</h2>
-        <Textfield
+        <Field
           isRequired
           label={'name'}
           placeholder={'Enter name...'}
           value={name}
           setValue={setName}
         />
-        <Textfield
+        <Field
           isRequired
           label={'role'}
           placeholder={'Enter role...'}
           value={role}
           setValue={setRole}
         />
-        <Textfield
+        <Field
           label={'image'}
           placeholder={'Enter image url...'}
           value={image}
@@ -60,14 +60,14 @@ export const Form = ({ onRecord, onTeamRecord, teams }) => {
       </form>
       <form onSubmit={handleSubmitTeam}>
         <h2>Fill in the fields to create a team</h2>
-        <Textfield
+        <Field
           isRequired
           label={'team'}
           placeholder={'Enter team name...'}
           value={teamName}
           setValue={setTeamName}
         />
-        <Textfield
+        <Field
           isRequired
           label={'color'}
           placeholder={'Enter color...'}
