@@ -31,7 +31,7 @@ export const Contributor = ({
         <h5>{role}</h5>
         <div className={'favorite'}>
           {isFavorite ? (
-            <AiFillHeart {...propsFavorite} />
+            <AiFillHeart {...propsFavorite} color={'red'} />
           ) : (
             <AiOutlineHeart {...propsFavorite} />
           )}
