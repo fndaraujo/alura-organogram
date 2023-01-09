@@ -12,6 +12,10 @@ export const Contributor = ({
   onFavorite,
 }) => {
   const handleMakeFavorite = () => onFavorite(id)
+  const propsFavorite = {
+    size: 25,
+    onClick: handleMakeFavorite,
+  }
   return (
     <StyledContributor primary={headerColor}>
       <AiFillCloseCircle
@@ -27,9 +31,9 @@ export const Contributor = ({
         <h5>{role}</h5>
         <div className={'favorite'}>
           {isFavorite ? (
-            <AiFillHeart size={28} onClick={handleMakeFavorite} />
+            <AiFillHeart {...propsFavorite} />
           ) : (
-            <AiOutlineHeart size={28} onClick={handleMakeFavorite} />
+            <AiOutlineHeart {...propsFavorite} />
           )}
         </div>
       </div>
