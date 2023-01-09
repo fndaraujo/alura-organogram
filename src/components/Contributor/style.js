@@ -46,4 +46,8 @@ export const StyledContributor = styled.div`
       padding: 0 16px;
     }
   }
+
+  .favorite {
+    margin-top: 20px;
+  }
 `

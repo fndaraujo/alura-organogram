@@ -21,6 +21,7 @@ export const Team = ({ team, contributors, onDelete, changeColor }) => {
               name={contributor.name}
               role={contributor.role}
               image={contributor.image}
+              isFavorite={contributor.isFavorite}
               headerColor={team.color}
               onDelete={onDelete}
             />

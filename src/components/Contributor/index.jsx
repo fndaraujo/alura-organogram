@@ -1,4 +1,4 @@
-import { AiFillCloseCircle } from 'react-icons/ai'
+import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 import { StyledContributor } from '@/components/Contributor/style'
 
 export const Contributor = ({
@@ -6,6 +6,7 @@ export const Contributor = ({
   name,
   role,
   image,
+  isFavorite,
   headerColor,
   onDelete,
 }) => (
@@ -21,6 +22,9 @@ export const Contributor = ({
     <div className={'footer'}>
       <h4>{name}</h4>
       <h5>{role}</h5>
+      <div className={'favorite'}>
+        {isFavorite ? <AiFillHeart /> : <AiOutlineHeart />}
+      </div>
     </div>
   </StyledContributor>
 )

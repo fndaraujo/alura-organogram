@@ -51,6 +51,7 @@ export const App = () => {
       role: 'Tech Leader',
       image: 'https://github.com/guilhermeonrails.png',
       team: teams[1].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -58,6 +59,7 @@ export const App = () => {
       role: 'Instructor',
       image: 'https://github.com/viniciosneves.png',
       team: teams[1].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -65,6 +67,7 @@ export const App = () => {
       role: 'Instructor & Software Developer',
       image: 'https://github.com/JulianaAmoasei.png',
       team: teams[1].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -72,6 +75,7 @@ export const App = () => {
       role: 'Instructor',
       image: 'https://github.com/lfrprazeres.png',
       team: teams[1].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -79,6 +83,7 @@ export const App = () => {
       role: 'Developer & Computer Scientist',
       image: 'https://github.com/fndaraujo.png',
       team: teams[1].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -86,6 +91,7 @@ export const App = () => {
       role: 'Hipster & Alura CTEO',
       image: 'https://github.com/peas.png',
       team: teams[0].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -93,6 +99,7 @@ export const App = () => {
       role: 'Zend Certified Engineer & Full Stack Developer',
       image: 'https://github.com/cviniciussdias.png',
       team: teams[0].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -100,6 +107,7 @@ export const App = () => {
       role: 'Instructor & Software Developer',
       image: 'https://github.com/bessax.png',
       team: teams[0].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -107,6 +115,7 @@ export const App = () => {
       role: 'Instructor & Medical Physicist',
       image: 'https://github.com/larissagabriela.png',
       team: teams[0].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -114,6 +123,7 @@ export const App = () => {
       role: 'Tech Leader',
       image: 'https://github.com/guilhermeonrails.png',
       team: teams[2].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -121,6 +131,7 @@ export const App = () => {
       role: 'Instructor & Mobile Developer',
       image: 'https://github.com/Kakomo.png',
       team: teams[5].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -128,6 +139,7 @@ export const App = () => {
       role: 'Instructor & Mobile Developer',
       image: 'https://github.com/ricarthlima.png',
       team: teams[5].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -135,6 +147,7 @@ export const App = () => {
       role: 'Designer & Developer',
       image: 'https://github.com/designernatan.png',
       team: teams[4].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -142,6 +155,7 @@ export const App = () => {
       role: 'UX Master & Developer',
       image: 'https://github.com/liviagabos.png',
       team: teams[4].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -149,6 +163,7 @@ export const App = () => {
       role: 'Instructor & System Engineer',
       image: 'https://github.com/camilafernanda.png',
       team: teams[3].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -156,6 +171,7 @@ export const App = () => {
       role: 'Instructor & Tech Leader',
       image: 'https://github.com/danielartine.png',
       team: teams[3].name,
+      isFavorite: false,
     },
     {
       id: uuidv4(),
@@ -163,6 +179,7 @@ export const App = () => {
       role: 'Hipster & Alura CTEO',
       image: 'https://github.com/peas.png',
       team: teams[6].name,
+      isFavorite: false,
     },
   ]
   const [contributors, setContributors] = useState(initialContributors)
