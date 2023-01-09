@@ -184,7 +184,7 @@ export const App = () => {
   ]
   const [contributors, setContributors] = useState(initialContributors)
   const handleOnRecord = (contributor) =>
-    setContributors([...contributors, contributor])
+    setContributors([...contributors, { ...contributor, id: uuidv4() }])
   const handleTeamRecord = (team) =>
     setTeams([...teams, { ...team, id: uuidv4() }])
   const changeTeamColor = (color, id) =>
