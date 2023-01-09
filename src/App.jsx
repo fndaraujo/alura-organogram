@@ -196,6 +196,15 @@ export const App = () => {
     )
   const deleteContributor = (id) =>
     setContributors(contributors.filter((contributor) => contributor.id !== id))
+  const handleFavorite = (id) => {
+    setContributors(
+      contributors.map((contributor) => {
+        if (contributor.id === id)
+          contributor.isFavorite = !contributor.isFavorite
+        return contributor
+      })
+    )
+  }
   return (
     <>
       <GlobalStyle />
@@ -214,6 +223,7 @@ export const App = () => {
           )}
           onDelete={deleteContributor}
           changeColor={changeTeamColor}
+          onFavorite={handleFavorite}
         />
       ))}
       <Footer />

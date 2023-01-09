@@ -2,7 +2,13 @@ import hexToRgba from 'hex-to-rgba'
 import { Contributor } from '@/components/Contributor'
 import { StyledTeam } from '@/components/Team/style'
 
-export const Team = ({ team, contributors, onDelete, changeColor }) => {
+export const Team = ({
+  team,
+  contributors,
+  onDelete,
+  changeColor,
+  onFavorite,
+}) => {
   return (
     contributors.length > 0 && (
       <StyledTeam primary={team.color} secundary={hexToRgba(team.color, '0.6')}>
@@ -24,6 +30,7 @@ export const Team = ({ team, contributors, onDelete, changeColor }) => {
               isFavorite={contributor.isFavorite}
               headerColor={team.color}
               onDelete={onDelete}
+              onFavorite={onFavorite}
             />
           ))}
         </div>
